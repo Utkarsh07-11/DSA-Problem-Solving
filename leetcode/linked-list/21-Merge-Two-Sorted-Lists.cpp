@@ -28,7 +28,7 @@ public:
             current = current->next;
         }
 
-        // Attach whichever list is left
+        
         if (list1 != nullptr)
             current->next = list1;
         else
