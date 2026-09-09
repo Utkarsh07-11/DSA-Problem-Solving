@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+#include <vector>
+#include <algorithm>
+
+
+using namespace std;
+
+int main() {
+    
+    string a, b;
+    cin >> a >> b;
+    for(size_t i = 0; i < a.length(); i++){
+        a[i] = tolower(a[i]);
+        b[i] = tolower(b[i]);
+    }
+
+    if (a < b) {
+        cout << "-1" << endl;
+    } else if (a > b) {
+        cout << "1" << endl;
+    } else {
+        cout << "0" << endl;
+    }
+
+    return 0;
+}
